@@ -1,20 +1,20 @@
 import com.codeborne.selenide.WebDriverRunner;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
     final static Logger logger = Logger.getLogger(BaseTest.class);
 
-    @BeforeTest
+    @BeforeClass
     public static void setup() {
         logger.info("Run browser...");
         System.setProperty("selenide.browser", "chrome");
         System.setProperty("webdriver.chrome.driver", "C:/mailukrnet/driver/chromedriver.exe");
     }
 
-//    @BeforeClass
+//    @BeforeTest
 //    public void openLoginPage() throws InterruptedException {
 //        logger.info("Open Login Page");
 //        open("https://mail.ukr.net");  //відкриваємо сторінку входу до поштової скриньки
@@ -23,7 +23,7 @@ public class BaseTest {
 //        $(By.cssSelector(".button")).click();
 //    }
 
-    @AfterTest
+    @AfterClass
     public static void tearDown(){
         logger.info("tearDown()");
 

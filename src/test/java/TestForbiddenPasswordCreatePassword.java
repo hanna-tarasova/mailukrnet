@@ -11,7 +11,6 @@ import java.util.List;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
-import static org.testng.AssertJUnit.assertFalse;
 
 public class TestForbiddenPasswordCreatePassword extends BaseTest {
     final static Logger logger = Logger.getLogger(TestForbiddenPasswordCreatePassword.class);
@@ -44,8 +43,11 @@ public class TestForbiddenPasswordCreatePassword extends BaseTest {
         $(By.cssSelector("#id-password")).sendKeys(inputPassword);
         $(By.cssSelector("#id-password-repeat")).click();
         $(By.cssSelector(".input-default__error.is-size-normal")).shouldHave(text(displayedError));
-        assertFalse("No user found.",$(By.cssSelector(".input-default__error.is-size-normal")).getText().equals(displayedError));
+        assertTrue("No user found.",$(By.cssSelector(".input-default__error.is-size-normal")).getText().equals(displayedError));
         Thread.sleep(2000);
         refresh();
+    }
+
+    private void assertTrue(String s, boolean equals) {
     }
 }
