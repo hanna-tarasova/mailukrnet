@@ -51,7 +51,7 @@ public class LoginErrorsUkrTest extends BaseTest {
 
 
 
-        open("https://accounts.ukr.net/login");
+        //open("https://accounts.ukr.net/login");
         Thread.sleep(2000);
 
         //¬же сам тест
