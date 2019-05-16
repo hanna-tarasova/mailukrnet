@@ -11,7 +11,7 @@ public class BaseTest {
     public static void setup() {
         logger.info("Run browser...");
         System.setProperty("selenide.browser", "chrome");
-        System.setProperty("webdriver.chrome.driver", "C:/mailukrnet/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/Users/hanna/IdeaProjects/mailukrnet/driver/chromedriver.exe");
     }
 
 //    @BeforeTest

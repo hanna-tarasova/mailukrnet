@@ -20,7 +20,7 @@ public class TestForbiddenPasswordCreatePassword extends BaseTest {
     public Object[][] errorDataForPasswordUa (Method method){
 
         ApachePOIreadHelper excelReader = new ApachePOIreadHelper();
-        File file = new File("C:/mailukrnet/data_file/forbidden_password.xlsx");
+        File file = new File("C:/Users/hanna/IdeaProjects/mailukrnet/data_file/forbidden_password.xlsx");
         excelReader.setExcelFile(String.valueOf(file), "ForbiddenTest");
         List rowsNo = excelReader.getRowContains(method.getName(), 0 );
         return excelReader.getTableArray(rowsNo);
