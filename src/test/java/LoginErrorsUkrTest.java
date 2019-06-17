@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import java.io.File;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -64,9 +63,16 @@ public class LoginErrorsUkrTest extends BaseTest {
         Thread.sleep(2000);
         refresh();
         $(By.id("id-l")).sendKeys(Keys.F5);
+
     }
+
+
 
     private void assertTrue(String s, boolean equals) {
     }
 }
+
+
+
+
 

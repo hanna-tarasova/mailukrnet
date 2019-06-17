@@ -277,7 +277,7 @@ public class LoginErrorTest extends BaseTest {
 
         softAssertion.assertAll();
 
-        Runtime.getRuntime().exec ("netsh wlan connect name=Provod");
+        Runtime.getRuntime().exec ("netsh wlan connect name=Xiaomi_Home");
         Thread.sleep(3000);
         $(By.cssSelector("#id-l")).clear();
         $(By.cssSelector("#id-p")).clear();
@@ -308,7 +308,7 @@ public class LoginErrorTest extends BaseTest {
 
         softAssertion.assertAll();
 
-        Runtime.getRuntime().exec ("netsh wlan connect name=Provod");
+        Runtime.getRuntime().exec ("netsh wlan connect name=Xiaomi_Home");
         Thread.sleep(3000);
         $(By.cssSelector("#id-l")).clear();
         $(By.cssSelector("#id-p")).clear();
@@ -339,7 +339,7 @@ public class LoginErrorTest extends BaseTest {
 
         softAssertion.assertAll();
 
-        Runtime.getRuntime().exec ("netsh wlan connect name=Provod");
+        Runtime.getRuntime().exec ("netsh wlan connect name=Xiaomi_Home");
         Thread.sleep(3000);
         $(By.cssSelector("#id-l")).clear();
         $(By.cssSelector("#id-p")).clear();
